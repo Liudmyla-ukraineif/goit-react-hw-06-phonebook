@@ -6,8 +6,7 @@ const Filter = () => {
   const dispatch = useDispatch();
   const filter = useSelector(getContactFilter);
 
-  const handleChangeFilter = ({ target }) => { 
-    console.log(target.value) 
+  const handleChangeFilter = ({ target }) => {  
     dispatch(changeFilter(target.value));
   };
 
